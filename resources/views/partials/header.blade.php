@@ -6,8 +6,9 @@
         </a>
         <nav class="nav-menu">
             <a href="{{ route('home') }}" class="{{ request()->routeIs('home') ? 'active' : '' }}">Главная</a>
+            <a href="{{ route('articles.index') }}" class="{{ request()->routeIs('articles.*') ? 'active' : '' }}">Статьи (БД)</a>
             <a href="{{ route('form.show') }}" class="{{ request()->routeIs('form.show') ? 'active' : '' }}">Форма заявки</a>
-            <a href="{{ route('records.index') }}" class="{{ request()->routeIs('records.index') ? 'active' : '' }}">Таблица записей</a>
+            <a href="{{ route('records.index') }}" class="{{ request()->routeIs('records.index') ? 'active' : '' }}">Таблица записей (JSON)</a>
         </nav>
     </div>
 </header>
